@@ -13,13 +13,6 @@ import java.util.List;
 @Controller
 public class MainController {
 
-    private static List<Person> personList = new ArrayList<>();
-
-    static {
-        personList.add(new Person("Bill", "Gates"));
-        personList.add(new Person("Steve", "Jobs"));
-    }
-
     @Value("${welcome.message}")
     private String message;
 
