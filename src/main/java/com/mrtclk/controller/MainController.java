@@ -13,7 +13,7 @@ public class MainController {
     private String message;
 
     @RequestMapping(value = {"/", "/index"}, method = RequestMethod.GET)
-    private String index(Model model) {
+    public String index(Model model) {
         model.addAttribute("message", message);
         return "index";
     }
